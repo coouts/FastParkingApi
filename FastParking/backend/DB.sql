@@ -1,6 +1,6 @@
-create database dbFastParking;
+create database estacionamentoApi;
 
-use dbFastParking;
+use estacionamentoApi;
 
 create table tblCadastro (
 	    idCadastro int not null auto_increment primary key,

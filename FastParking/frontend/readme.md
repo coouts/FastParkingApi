@@ -1,6 +1,7 @@
 ## Fast parking
 
-Parte de front-end concluída :)
+O FastParking realizada anteriormente, foi modificado para um melhor acesso de site.
+Parte de front-end concluída (site)   :)
 -JS
 
 ## Objetivo:

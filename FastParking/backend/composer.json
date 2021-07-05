@@ -1,0 +1,10 @@
+{
+    "name": "leticia/fastparking-api",
+    "description": "FastParkig API REST",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "require": {}
+}
