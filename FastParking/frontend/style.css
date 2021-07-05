@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 20px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #b8b0b0;
+}
+
+header {
+    height: 100px;
+    color: #000000;
+    text-align: center;
+    opacity: 0px;
+    font-family: "aharoni";
+    letter-spacing: 10px;
+    font-size: larger;
+}
+
+section {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#cadastroCarros {
+    height: 200px;
+    width: 600px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Arial", Times, serif;
+    flex-direction: column;
+    color: black;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    border-color: white;
+    border: solid;
+}
+
+label {
+    font-size: 20px;
+}
+
+#nome-input {
+    width: 400px;
+    height: 4vh;
+    margin-bottom: 20px;
+    border-radius: 0px;
+    border-color: black;
+}
+
+#placa-input {
+    width: 408px;
+    height: 4vh;
+    border-radius: 0px;
+    border-color: black;
+}
+
+#botaoCadastrar {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color:black;
+    color: white;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 0px;
+    border-color: black
+
+}
+
+#containerCarros {
+    width: auto;
+    margin-top: 5vh;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: "Arial";
+}
+
+#conteinerNome {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: rgb(89, 0, 255); */
+    overflow-y: scroll;
+}
+
+.estilo {
+    color:black;
+    height: 60px;
+    width: 150px;
+    background-color: white;
+    border: 2px solid black;
+    margin-bottom: 3px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-transform: uppercase;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+}
+
+.titulos {
+    height: 20px;
+    width: 150px;
+    background-color: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+    margin-bottom: 3px;
+    text-align: center;
+    text-decoration: bold;
+    color: black;
+}
+
+.Acoes {
+    height: 60px;
+    width: 200px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.titulos-acoes {
+    height: 20px;
+    width: 200px;
+    background-color: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+    margin-bottom: 3px;
+    text-align: center;
+    text-decoration: bold;
+    color:black;
+}
+
+.button-acao {
+    height: 45px;
+    width: 45px;
+    float: left;
+    margin-left: 5px;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #b8b0b0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: large;
+    width: 50px;
+    height: 70px;
+}
+
+.modalComp {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: -5000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.mostarModal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* opacity: 0; */
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.tituloComprovante {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 5px;
+    /* background-color: #ff42d6; */
+    margin-top: 5px;
+    display: flex;
+    /* align-items:flex-end; */
+}
+
+#modal-comprovante {
+    height: 420px;
+    width: 350px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    line-height: 30px;
+    color: rgb(2, 2, 2);
+    border-color: black;
+    border: solid;
+}
+
+.info {
+    width: 100%;
+    float: left;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#button-imprimir {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border-color: #000000;
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 10px 5px 5px black;
+    font: Arial;
+}
+
+#fecharModal {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    background-size: cover;
+    color: #bb0000;
+}
+#fecharModal:hover{
+    cursor: pointer;
+
+}
+h2 {
+    padding-right: 77px;
+}
+
+#horarioSaida {
+    margin-left: 10px;
+}
+
+#botao-atualizar {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border-color: #123438;
+    background-color: #243069;
+    color: rgb(136, 22, 22);
+    box-shadow: 10px 5px 5px black;
+    margin-left: 20px;
+}
+
+/*Edição do ícone*/
+#car{
+    margin-top: 20px;
+    margin-left: 1000px;
+  }

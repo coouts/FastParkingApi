@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Parking</title>
+    <link rel="icon" type="imagem/png" href="icon/android-chrome-192x192.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--Ícone do carro-->
+    <div id="car">
+        <img src="img/car.png"/>
+    </div>
+
+    <!--Título do site-->
+    <header>
+        <div id="logo">
+            <h1>FastParking</h1>
+        </div>
+    </header>
+
+    <!--Começando a tabela cadastro-->
+    <section>
+        <div id="cadastroCarros">
+            <form action="">
+                <div>
+                    <label for="nome-input">Nome :</label>
+                    <input type="text" id="nome-input" placeholder="Digite seu nome..." required maxlength="25">
+                </div>
+                <div>
+                    <label for="placa-input">Placa :</label>
+                    <input type="text" id="placa-input" placeholder="XXX0000" required maxlength=8>
+                </div>
+                <button id="botaoCadastrar">
+                    <h1>CADASTRO</h1>
+                </button>
+            </form>
+        </div>
+    </section>
+    <div id="containerCarros">
+        <div id="conteinerNome">
+            <div class="nome">
+                <div class="titulos">NOME</div>
+                <div class="nome"></div>
+            </div>
+            <div class="Placa">
+                <div class="titulos">PLACA</div>
+            </div>
+            <div class="Data">
+                <div class="titulos">DATA</div>
+
+            </div>
+            <div class="Hora">
+                <div class="titulos">HORA</div>
+            </div>
+            <div class="Container-botoes">
+                <div class="titulos titulos-acoes">AÇÕES</div>
+
+            </div>
+        </div>
+    </div>
+    <div id="containerModalComprovante" class="modalComp">
+        <div id="modal-comprovante">
+            <div class="tituloComprovante">
+                <h2>Comprovante</h2>
+
+                <div id="fecharModal"></div>
+
+            </div>
+            <div>
+
+            </div>
+            <div class="info-comprovate" id="Nome-data">
+                <h3 id="h3Nome"></h3>
+                <h3 id="h3Data"></h3>
+            </div>
+            <div class="info-comprovate" id="Hora-placa">
+                <h3 id="h3HoraEntrada"></h3>
+                <h3 id="h3HoraSaida"></h3>
+                <h3 id="h3Placa"></h3>
+            </div>
+            <h2 class="tituloComprovante" id="valorPagar"></h2>
+            <div id="button-imprimir">
+                <button class="botao">IMPRIMIR</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</html>
+</body>
